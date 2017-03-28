@@ -51,7 +51,7 @@ namespace LarkServer
                 //Send
                 //服务器通过connfi.Send发送数据，byte[]类型参数为要发送的内容
                 //返回值为发送数据的长度
-                byte[] bytes = Encoding.UTF8.GetBytes("[serv echo]" + str);
+                byte[] bytes = Encoding.UTF8.GetBytes("[serv echo]" + str+"["+DateTime.Now.ToString() + "");
                 connfd.Send(bytes);
             }
 
